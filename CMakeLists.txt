@@ -27,3 +27,5 @@ endif (WIN32)
 
 target_link_libraries(lua     ${LUA_LIBRARIES} ${Python_LIBRARIES})
 target_link_libraries(python  ${LUA_LIBRARIES} ${Python_LIBRARIES})
+
+install(TARGETS python lua DESTINATION lib)
